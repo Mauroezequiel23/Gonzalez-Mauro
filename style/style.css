@@ -30,7 +30,7 @@
     }
     
     .pie{
-        background-color: rgb(54, 48, 48);
+        background: linear-gradient(to right, rgb(54, 48, 48), rgb(31, 18, 18), rgb(43, 8, 8));
         font-size: 12px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
@@ -50,6 +50,8 @@
     text-align: center;
     }
 
+
+
     .logo{grid-area: logo;}
     .lista{grid-area: lista;}
     .section1{grid-area: section1;}
@@ -58,13 +60,13 @@
     #contenedor{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 20% auto 20%;
+        grid-template-rows: 150px 20% auto 20%;
         grid-template-areas: "logo" "lista" "section1" "pie";
     }
     #contenedor1{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px 20% none 20%;
+        grid-template-rows: 150px 45% auto;
         grid-template-areas: "logo" "lista" "pie";
     }
 }
@@ -99,7 +101,7 @@
     }
     
     .pie{
-        background-color: rgb(54, 48, 48);
+        background: linear-gradient(to right, rgb(54, 48, 48), rgb(31, 18, 18), rgb(43, 8, 8));
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-weight: bold;
@@ -128,5 +130,12 @@
         grid-template-columns: 100%;
         grid-template-rows: 400px 10% auto 20%;
         grid-template-areas: "logo" "lista" "section1" "pie";
+    }
+
+    #contenedor1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 20% auto;
+        grid-template-areas: "logo" "lista" "pie";
     }
 }
