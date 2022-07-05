@@ -1,0 +1,126 @@
+
+
+@media screen and (min-width: 320px) {
+    html {
+        background-color: rgb(235, 203, 203);
+    }
+    
+    .logo{
+        height: 100%;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .lista{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .lista li{
+        display: inline;
+        background-color: rgb(161, 255, 107);
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        border: solid 1px rgb(0, 0, 0);
+    }
+    
+    .pie{
+        background-color: rgb(54, 48, 48);
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        color: white ;
+        border: solid 5px rgb(54, 48, 48);
+        width: 98%;
+    }
+    
+    .subtitulo1{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .texto1{
+    font-size: 20px;
+    text-align: center;
+    }
+
+    .logo{grid-area: logo;}
+    .lista{grid-area: lista;}
+    .section1{grid-area: section1;}
+    .pie{grid-area: pie;}
+
+    #contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 20% auto 20%;
+        grid-template-areas: "logo" "lista" "section1" "pie";
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: rgb(235, 203, 203);
+    }
+    
+    .logo{
+        height: 400px;
+        width: 100%;
+        text-align: right;
+    }
+    
+    .lista{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .lista li{
+        display: inline;
+        background-color: rgb(161, 255, 107);
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        border: solid 1px rgb(0, 0, 0);
+    }
+    
+    .pie{
+        background-color: rgb(54, 48, 48);
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        text-align: left;
+        color: white ;
+        border: solid 5px rgb(54, 48, 48);
+        width: 99.5%;
+    }
+    
+    .subtitulo1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .texto1{
+    font-size: 30px;
+    text-align: center;
+    }
+    .logo{grid-area: logo;}
+    .lista{grid-area: lista;}
+    .section1{grid-area: section1;}
+    .pie{grid-area: pie;}
+
+    #contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 10% auto 20%;
+        grid-template-areas: "logo" "lista" "section1" "pie";
+    }
+}
