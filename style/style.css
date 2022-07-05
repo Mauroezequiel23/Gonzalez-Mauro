@@ -61,6 +61,12 @@
         grid-template-rows: 100px 20% auto 20%;
         grid-template-areas: "logo" "lista" "section1" "pie";
     }
+    #contenedor1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 20% none 20%;
+        grid-template-areas: "logo" "lista" "pie";
+    }
 }
 
 @media screen and (min-width: 1200px) {
