@@ -1,6 +1,5 @@
-.list-group-item{
-    background-color: rgb(161, 255, 107);    
-}
+
+
 @media screen and (min-width: 320px) {
     html {
         background-color: rgb(235, 203, 203);
