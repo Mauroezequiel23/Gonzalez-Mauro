@@ -7,6 +7,30 @@
     width: 100%;
     text-align: right;
   }
+  html .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+  }
+  html .botones .btn, html .botones .boton2, html .botones .boton1 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  html .botones .boton1 {
+    background-color: grey;
+  }
+  html .botones .boton2 {
+    background-color: orange;
+  }
   html .lista {
     display: flex;
     flex-direction: row;
@@ -56,7 +80,7 @@
   html #contenedor {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 20% auto 20%;
+    grid-template-rows: 150px 20% auto 29%;
     grid-template-areas: "logo" "lista" "section1" "pie";
   }
   html #contenedor1 {
@@ -74,6 +98,30 @@
     height: 400px;
     width: 100%;
     text-align: right;
+  }
+  html .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+  }
+  html .botones .btnB, html .botones .boton2, html .botones .boton1 {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  html .botones .boton1 {
+    background-color: grey;
+  }
+  html .botones .boton2 {
+    background-color: orange;
   }
   html .lista {
     display: flex;
@@ -124,7 +172,7 @@
   html #contenedor {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 10% auto 20%;
+    grid-template-rows: 400px 10% auto 28%;
     grid-template-areas: "logo" "lista" "section1" "pie";
   }
   html #contenedor1 {
@@ -132,5 +180,11 @@
     grid-template-columns: 100%;
     grid-template-rows: 400px 20% auto;
     grid-template-areas: "logo" "lista" "pie";
+  }
+  .discord {
+    background-color: grey;
+  }
+  .email {
+    background-color: orange;
   }
 } /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
