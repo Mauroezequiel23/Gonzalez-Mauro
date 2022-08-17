@@ -1,7 +1,12 @@
 $color-fondo: rgb(235, 203, 203);
 $fuente: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 $botones: (discord: grey, email: orange);
-
+@mixin grillas($porcentajes, $orden) {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: $porcentajes;
+  grid-template-areas: $orden;
+}
 @media screen and (min-width: 320px) {
     html {
       background-color: $color-fondo;
@@ -9,6 +14,11 @@ $botones: (discord: grey, email: orange);
         height: 100%;
         width: 100%;
         text-align: right;
+        }
+        .opiniones{
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
         }
         .botones{
           display: flex;
@@ -83,17 +93,23 @@ $botones: (discord: grey, email: orange);
         .pie {
         grid-area: pie;
         }
+        .card-group{
+          grid-area: tarjetas;
+        }
         #contenedor {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 150px 20% auto 29%;
-        grid-template-areas: "logo" "lista" "section1" "pie";
+        grid-template-rows: 150px auto auto auto auto;
+        grid-template-areas: "logo" "lista" "section1" "tarjetas" "pie";
         }
         #contenedor1 {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 150px 45% auto;
+        grid-template-rows: 150px auto auto;
         grid-template-areas: "logo" "lista" "pie";
+        }
+        #contenedor2 {
+          @include grillas(150px 141px auto auto, "logo" "lista" "section1" "pie");
         }
   }
 }
@@ -104,6 +120,8 @@ $botones: (discord: grey, email: orange);
         height: 400px;
         width: 100%;
         text-align: right;
+        }
+        .card-group{
         }
         .botones{
           display: flex;
@@ -177,26 +195,22 @@ $botones: (discord: grey, email: orange);
         .pie {
         grid-area: pie;
         }
-                
-        #contenedor {
-          @include grillas(400px 10% auto 28%, "logo" "lista" "section1" "pie");
+        .card-group{
+          grid-area: tarjetas;
+        }
+        #contenedor {          
+          @include grillas(400px auto auto auto auto, "logo" "lista" "section1" "tarjetas" "pie");
         }
 
-        #contenedor1 {
-          @include grillas(400px 20% auto, "logo" "lista" "pie");
+        #contenedor1 {          
+          @include grillas(400px auto auto, "logo" "lista" "pie");
+        }
+        #contenedor2 {
+          @include grillas(400px 10% auto auto, "logo" "lista" "section1" "pie");
         }
     }
-    @each $red, $color in $botones {
-      .#{$red}{
-        background-color: $color;
-      }
-    }
-    
-    @mixin grillas($porcentajes, $orden) {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: $porcentajes;
-      grid-template-areas: $orden;
-    }
 }
+
+
+
 /*# sourceMappingURL=style.css.map*/

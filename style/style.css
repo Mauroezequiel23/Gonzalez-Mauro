@@ -7,6 +7,11 @@
     width: 100%;
     text-align: right;
   }
+  html .opiniones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   html .botones {
     display: flex;
     flex-direction: row;
@@ -77,17 +82,26 @@
   html .pie {
     grid-area: pie;
   }
+  html .card-group {
+    grid-area: tarjetas;
+  }
   html #contenedor {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 20% auto 29%;
-    grid-template-areas: "logo" "lista" "section1" "pie";
+    grid-template-rows: 150px auto auto auto auto;
+    grid-template-areas: "logo" "lista" "section1" "tarjetas" "pie";
   }
   html #contenedor1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 45% auto;
+    grid-template-rows: 150px auto auto;
     grid-template-areas: "logo" "lista" "pie";
+  }
+  html #contenedor2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 141px auto auto;
+    grid-template-areas: "logo" "lista" "section1" "pie";
   }
 }
 @media screen and (min-width: 1200px) {
@@ -169,22 +183,26 @@
   html .pie {
     grid-area: pie;
   }
+  html .card-group {
+    grid-area: tarjetas;
+  }
   html #contenedor {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 10% auto 28%;
-    grid-template-areas: "logo" "lista" "section1" "pie";
+    grid-template-rows: 400px auto auto auto auto;
+    grid-template-areas: "logo" "lista" "section1" "tarjetas" "pie";
   }
   html #contenedor1 {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 400px 20% auto;
+    grid-template-rows: 400px auto auto;
     grid-template-areas: "logo" "lista" "pie";
   }
-  .discord {
-    background-color: grey;
+  html #contenedor2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 10% auto auto;
+    grid-template-areas: "logo" "lista" "section1" "pie";
   }
-  .email {
-    background-color: orange;
-  }
-} /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map*//*# sourceMappingURL=style.css.map */
